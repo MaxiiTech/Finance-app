@@ -1,4 +1,3 @@
-import { accounts } from './../../../public/db/schema';
 import {InferRequestType, InferResponseType } from "hono";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner"
@@ -6,7 +5,7 @@ import { toast } from "sonner"
 import { client } from "@/lib/hono";
 
 
-type ResponseType = InferRequestType<typeof client.api.accounts["bulk-delete"]["$post"]>;
+type ResponseType = InferResponseType<typeof client.api.accounts["bulk-delete"]["$post"]>;
 type RequestType = InferRequestType<typeof client.api.accounts["bulk-delete"]["$post"]>["json"];
 
 export const useBulkDeleteAccounts = () => {
