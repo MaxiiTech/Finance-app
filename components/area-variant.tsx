@@ -23,7 +23,7 @@ export const AreaVariant = ({ data }: Props) => {
     return(
         <ResponsiveContainer width="100%" height={350}>
             <AreaChart data={data}>
-              <CartesianGrid strokeDashArray="3 3"/>
+              <CartesianGrid strokeDasharray="3 3"/>
                 <defs>
                     <linearGradient id="income" x1="0" y1="0" x2="0" y2="0">
                         <stop offset="2%" stopColor="#3d82f6" stopOpacity={0.8}/>
