@@ -11,6 +11,7 @@ import {
   getFilteredRowModel,
   useReactTable,
   getPaginationRowModel,
+  Row,
 } from "@tanstack/react-table"
 
 import {
