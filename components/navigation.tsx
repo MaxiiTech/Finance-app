@@ -42,7 +42,7 @@ const routes = [
 
 export const Navigation = () => {
     
-    const [isOpen, setIsOpen] = useState();
+    const [isOpen, setIsOpen] = useState(false);
     const router = useRouter();
     const pathname = usePathname();
     const isMobile = useMedia("(max-width: 1024px)", false);
@@ -64,7 +64,7 @@ export const Navigation = () => {
                      hover:text-white border-none focus-visible:ring-offset-0 
                      focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition"
                     >
-                        <Menu classNmae="size-4"/>
+                        <Menu className="size-4"/>
                     </Button>
                 </SheetTrigger>
                 <SheetContent side="left" className="px-2">
